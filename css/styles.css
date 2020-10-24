@@ -659,13 +659,52 @@ img {
   margin-right: 4px;
 }
 
+.contact-bottom {
+  border: 0;
+  width: 226px;
+}
 
+.mapp {
+  width: 462px;
+  margin-right: 166px;
 
+}
 
+#contact {
+  background-image: url("../img/bgcontact.png");
+  background-repeat: no-repeat;
+  display: flex;
+  padding: 0;
+  margin-bottom: 247px;
+}
 
+.contact__heading {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 62px;
+  color: #FFFFFF;
+  margin: 0;
+  margin-top: 30px;
+}
 
+.contact__text {
+  width: 384px;
+}
 
+.contact__box {
+  display: flex;
+  flex-direction: column;
+}
 
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-input {
+  margin: 14px 0;
+
+}
 
 
 
