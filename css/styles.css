@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Futura PT";
   src: url("FuturaPT-Medium.woff2") format("woff2"),
-      url("FuturaPT-Medium.woff") format("woff");
+  url("FuturaPT-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -10,7 +10,7 @@
 @font-face {
   font-family: "Futura PT Book";
   src: url("FuturaPT-Book.woff2") format("woff2"),
-      url("FuturaPT-Book.woff") format("woff");
+  url("FuturaPT-Book.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -19,7 +19,7 @@
 @font-face {
   font-family: "Futura PT";
   src: url("FuturaPT-Bold.woff2") format("woff2"),
-      url("FuturaPT-Bold.woff") format("woff");
+  url("FuturaPT-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -40,13 +40,16 @@ html {
 body {
   padding: 0;
   margin:0;
-  font-family: "Open sans", "Arial", sans-serif;
+  font-family: "Futura PT", "Arial", sans-serif;
   font-size: 16px;
   height: 100vh;
-  line-height: 1.5;
-  background-color: #fbebea;
-  color: #222;
-
+  line-height: 21px;
+  background-color: #e5e5e5;
+  color: #949494;
+  background-image: url("../img/bg.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 img {
@@ -71,22 +74,208 @@ img {
   padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
-  }
+}
 
-  
+.site-header--top {
+  display: flex;
+  padding: 11px 0 9px 0;
+  align-items: center;
+}
+
+.address-clinic {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  color: #333333;
+  margin-left: 173px;
+}
+
+.address-clinic::before {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  content: "";
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-image: url("../img/uycha.png");
+  margin: 0 9px;
+}
+
+.tel {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.tel-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #333333;
+  transition: 0.3s ease;
+}
+
+.tel-link:hover {
+  color: #FFBD54;
+}
+
+.tel-link:active {
+  color: #333333;
+  opacity: 0.6;
+}
+
+.tel-link::before {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  content: "";
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-image: url("../img/Vector.png");
+  margin: 0 9px;
+}
+
+.two-tel::before {
+  width: 4px;
+  height: 4px;
+  background-image: url("../img/ellips.png");
+}
+
+.work-date {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+
+.work-date::before {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  content: "";
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-image: url("../img/schedule.png");
+  margin-right: 7px;
+}
+
+.work-date--time {
+  margin: 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  color: #333333;
+
+}
+
+.work-date--time--left {
+  margin-right: 17px;
+
+}
+
+.header-bottom {
+  background-color: #fff;
+
+}
+
+.header-bottom-content {
+  display: flex;
+  position: relative;
+  padding: 20px 0;
+}
+
+.logo-link {
+  display: block;
+  vertical-align: baseline;
+  position: absolute;
+  top: -20px;
+}
+
+.logo-img {
+  display: block;
+}
 
 
+.site__nav--list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+}
 
+.site__nav--item {
+  margin: 0 27px;
+}
 
+.site__nav--item-link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #333333;
+  transition: 0.3s ease;
+}
 
+.site__nav--item-link:active, .footer__bottom--link:active {
+  opacity: 0.6;
+}
 
+.site__nav--item-link:hover, .footer__bottom--link:hover {
+  box-shadow:  0 3px 0 0 yellow;
+}
 
+.footer__bottom--link {
+  display: flex;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #333333;
+  margin-left: auto;
+}
 
+.footer__bottom--link::before {
+  display: inline-block;
+  width: 23px;
+  height: 20px;
+  content: "";
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../img/pet.png");
+  margin-right: 4px;
+}
 
+.site__nav {
+  padding-left: 177px;
+  margin-left: auto;
 
+}
 
+.site__nav--item--active::before {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  content: "";
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-image: url("../img/baliqcha.png");
+  margin-right: 12px;
+}
 
-
+.site__nav--item--active {
+  display: flex;
+  align-items: center;
+}
 
 
 
