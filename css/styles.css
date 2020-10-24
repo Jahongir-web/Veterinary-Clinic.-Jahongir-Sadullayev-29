@@ -391,18 +391,175 @@ img {
   margin-bottom: 190px;
 }
 
-.
+#services__heading {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 54px;
+  color: #333333;
+  text-align: center;
+  margin: 0 0 80px 0;
+}
 
+.services__list {
+  position: relative;
+  max-width: 1350px;
+  padding: 0 44px;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  overflow: hidden;
+}
 
+.services__item {
+  display: flex;
+  padding: 6px 6px 0 6px;
+  background-color:  #e5e5e5;
+}
 
+.services__link {
+  text-decoration: none;
+  width: 193px;
+  display: block;
+  text-align: center;
+  background-color: #fff;
+  padding: 30px 32px 28px 35px;
+  border-radius: 5px;
+  border-bottom: 12px solid #e5e5e5;
+}
 
+.services__link:hover {
+  opacity: 0.8;
+}
 
+.services__link:active {
+  opacity: 0.6;
+}
 
+.services__link--active {
+  border-bottom: 12px solid #fff;
+  border-radius: 5px 5px 0 0;
+}
 
+.services__img {
+  margin-bottom: 22px;
+}
 
+.services__text {
+  width: 126px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #333333;
+  margin: auto;
 
+}
 
+.services__content {
+  max-width: 1218px;
+  margin-left: 50px;
+  background-color: #fff;
+  display: flex;
+  padding: 42px 35px;
+}
 
+.services__content--box {
+  max-width: 550pxpx;
+  margin-left: 67px;
+}
+
+.services__content--text {
+  max-width: 492px;
+}
+
+.services__content--img {
+  display: block;
+}
+
+.services__link-bottom {
+  vertical-align: baseline;
+  text-decoration: none;
+  padding: 15px 36px;
+  display: inline-block;
+  margin-right: 20px;
+  background-color: #FFBD54;
+  color: #fff;
+  transition: 0.3s ease;
+  border-radius: 3px;
+}
+
+.services__link-bottom:hover {
+  background-color: #333333;
+  color: #FFBD54;
+}
+
+.services__link-bottom:active {
+  opacity: 0.6;
+}
+
+.services__link--right {
+  display: inline-block;
+  margin: 0;
+  margin-top: 20px;
+}
+
+.services__heading--bottom {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 20px;
+  margin: 0;
+  margin-top: 32px;
+  color: #333333;
+}
+
+.btn-slider {
+  width: 14px;
+  height: 25px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: 0;
+  background-color: transparent;
+}
+
+.btn-slider-left {
+  background-image: url("../img/arrow-prev.png");
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+
+.btn-slider-right {
+  position: absolute;
+  background-image: url("../img/arrow-next.png");
+  right: -0px;
+  top: 50%;
+}
+
+.services {
+  margin-bottom: 127px;
+}
+
+.subscription {
+  margin-bottom: 151px;
+  background-image: url("../img/dog.png");
+  background-repeat: no-repeat;
+}
+
+.btn {
+  border: 0;
+}
+
+.input-group {
+  width: 335px;
+  padding: 15px 0 14px 22px;
+  border: 0;
+  border-radius: 3px;
+  margin: 278px 21px 153px 0;
+}
+
+.subscription__form {
+  margin-left: 222px;
+}
 
 
 
