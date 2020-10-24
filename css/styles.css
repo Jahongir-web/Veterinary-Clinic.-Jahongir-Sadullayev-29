@@ -540,7 +540,6 @@ img {
 }
 
 .subscription {
-  margin-bottom: 151px;
   background-image: url("../img/dog.png");
   background-repeat: no-repeat;
 }
@@ -554,12 +553,133 @@ img {
   padding: 15px 0 14px 22px;
   border: 0;
   border-radius: 3px;
-  margin: 278px 21px 153px 0;
+  margin: 278px 21px 73px 0;
 }
 
 .subscription__form {
   margin-left: 222px;
 }
+
+.articles__heading {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 54px;
+  color: #333333;
+  text-align: center;
+  margin: 80px 0;
+}
+
+.articles__list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 153px;
+  list-style-type: none;
+  justify-content: space-between;
+}
+
+.articles__link--middle {
+  display: flex;
+}
+
+.articles__item--box {
+  padding: 0 34px;
+}
+
+.articles__item {
+  width: 305px;
+  background-color: #fff;
+  border-radius: 3px;
+}
+
+.articles__item:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.articles__item:hover .lern-more{
+  color: #FFBD54;
+}
+
+.articles__item--middle {
+  width: 640px;
+}
+
+.articles__item:active {
+  opacity: 0.8;
+}
+
+.articles__item:active .lern-more {
+  color: #333333;
+}
+
+.time {
+  width: 71px;
+  margin-left: auto;
+}
+
+.articles__link {
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #949494;
+
+}
+
+.articles__title {
+  margin: 0;
+  width: 193px;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 29px;
+  color: #333333;
+}
+
+.articles__text {
+  margin: 5px 0 0 0;
+}
+
+.lern-more {
+  display: flex;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.lern-more::before {
+  display: inline-block;
+  width: 23px;
+  height: 20px;
+  content: "";
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../img/pet.png");
+  margin-right: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
