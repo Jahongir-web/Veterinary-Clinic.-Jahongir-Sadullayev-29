@@ -5,9 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Veterinary-Clinic</title>
-  <link rel="stylesheet" href="css/normalize.css">
+  <!-- <link rel="stylesheet" href="css/normalize.css">
 
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.css"> -->
+
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -94,9 +96,9 @@
 
           <div class="blockquote-box">
 
-            <img src="./img/qoshtirnoq.svg" alt="qo'shtirnoq" class="quotation quotation-left" width="" height="80">
+            <img src="./img/qoshtirnoq.svg" alt="qo'shtirnoq" class="quotation quotation-left" width="100" height="80">
             <blockquote class="blockquote-text">Наша ветеринарная клиника готова уделить максимум внимания Вам и Вашему питамцу. Здоровье и благополучие Ваших животных очень важно для нас и мы стремимся оказать наилучшую возможную ветеринарную помощь.</blockquote>
-            <img class="quotation quotation-right" src="./img/qoshtirnoqong.svg" alt="qo'shtirnoq" width="" height="60">
+            <img class="quotation quotation-right" src="./img/qoshtirnoqong.svg" alt="qo'shtirnoq" width="100" height="60">
           </div>
 
           <hr class="line">
@@ -109,11 +111,11 @@
 
     <div class="services container">
       <h2 id="services__heading">Наши услуги</h2>
-
+      <button class="btn-slider btn-slider-left"></button>
+      <button class="btn-slider btn-slider-right"></button>
       <ul class="services__list">
 
-        <button class="btn-slider btn-slider-left"></button>
-        <button class="btn-slider btn-slider-right"></button>
+
         <li class="services__item services__item--active">
           <a href="" class="services__link services__link--active ">
             <img src="./img/doctor.png" srcset="./img/doctor.png 1x, ./img/doctor@2x.png 2x" alt="rasm" class="services__img" width="54" height="77">
@@ -237,7 +239,7 @@
             <a href="#" class="articles__link">
               <img src="./img/cat.png" srcset="./img/cat.png 1x, ./img/cat@2x.png 2x" alt="rasm" class="articles__img" width="305" height="180">
               <div class="articles__item--box">
-                <p class="time"><time datetime="28-08-2020 00:00:00">28.08.2020</time></p>
+                <p class="time"><time datetime="2020-08-28 00:00:00">28.08.2020</time></p>
                 <h4 class="articles__title">Ультразвуковая чистка зубов</h4>
                 <p class="articles__text">Появление в доме котенка приятное и радосное событие. Но не всегда этот пушистый зверек берется от ...</p>
                 <p class="lern-more">Читать больше</p>
@@ -250,7 +252,7 @@
             <a href="#" class="articles__link articles__link--middle">
               <img src="./img/dogs.png" srcset="./img/dogs.png 1x, ./img/dogs@2x.png 2x" alt="rasm" class="articles__img" width="305" height="435">
               <div class="articles__item--box">
-                <p class="time"><time datetime="28-08-2020 00:00:00">28.08.2020</time></p>
+                <p class="time"><time datetime="2020-08-28 00:00:00">28.08.2020</time></p>
                 <h4 class="articles__title">Ультразвуковая чистка зубов</h4>
                 <p class="articles__text">Появление в доме котенка приятное и радосное событие. Но не всегда этот пушистый зверек берется от заводчиков, Бивают и ситуации когда животное находят на улице и дают ему теплый дом. И первым вопросом, который возникает у новых хозяев – как определить возраст котенка. Появление в доме котенка приятное и радосное событие.</p>
                 <p class="lern-more">Читать больше</p>
@@ -263,7 +265,7 @@
             <a href="#" class="articles__link">
               <img src="./img/kuchuk.png" srcset="./img/kuchuk.png 1x, ./img/kuchuk@2x.png 2x" alt="rasm" class="articles__img" width="305" height="180">
               <div class="articles__item--box">
-                <p class="time"><time datetime="28-08-2020 00:00:00">28.08.2020</time></p>
+                <p class="time"><time datetime="2020-08-28 00:00:00">28.08.2020</time></p>
                 <h4 class="articles__title">Ультразвуковая чистка зубов</h4>
                 <p class="articles__text">Появление в доме котенка приятное и радосное событие. Но не всегда этот пушистый зверек берется от ...</p>
                 <p class="lern-more">Читать больше</p>
@@ -278,29 +280,29 @@
     <div id="contact">
       <div class="mapp">
         <a href="https://yandex.uz/maps/-/CCQ~NDWBCD">
-        <img src="./img/mapp.png" alt="mapp" width="462" height="652"></a>
+          <img src="./img/mapp.png" alt="mapp" width="462" height="652"></a>
+        </div>
+
+        <div class="contact__box">
+          <h2 class="contact__heading">Обратная связь</h2>
+          <p class="contact__text">При возникновении вопросов по поводу работы клиники или консультаций, заполните форму ниже:</p>
+          <form class="contact-form"  action="https://echo.htmlacademy.ru" method="post">
+
+            <input class="input-group contact-input" type="text" name="name" aria-label="Your name" required placeholder="Ваше имя">
+            <input class="input-group contact-input" type="email" placeholder="Email для обратной связи" name="email" pattern="^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$" aria-label="your email" required>
+
+            <textarea class="input-group contact-input" name="textarea" id="textarea" cols="30" rows="10" placeholder="Опишите Ваш вопрос.
+            "></textarea>
+            <button class="services__link-bottom contact-bottom" type="submit">Задать нам вопрос</button>
+          </form>
+        </div>
+
       </div>
 
-      <div class="contact__box">
-        <h2 class="contact__heading">Обратная связь</h2>
-        <p class="contact__text">При возникновении вопросов по поводу работы клиники или консультаций, заполните форму ниже:</p>
-        <form class="contact-form"  action="https://echo.htmlacademy.ru" method="post">
 
-          <input class="input-group contact-input" type="text" name="name" aria-label="Your name" required placeholder="Ваше имя">
-          <input class="input-group contact-input" type="email" placeholder="Email для обратной связи" name="email" pattern="^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$" aria-label="your email" required>
-
-          <textarea class="input-group contact-input" name="textarea" id="" cols="30" rows="10" placeholder="Опишите Ваш вопрос.
-          "></textarea>
-          <button class="services__link-bottom contact-bottom" type="submit">Задать нам вопрос</button>
-        </form>
-      </div>
-
-    </div>
+    </main>
 
 
-  </main>
+  </body>
 
-
-</body>
-
-</html>
+  </html>
