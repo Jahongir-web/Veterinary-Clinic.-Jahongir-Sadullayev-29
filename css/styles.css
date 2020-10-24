@@ -80,6 +80,7 @@ img {
   display: flex;
   padding: 11px 0 9px 0;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .address-clinic {
@@ -197,6 +198,15 @@ img {
   vertical-align: baseline;
   position: absolute;
   top: -20px;
+  transition: 0.36s ease;
+}
+
+.logo-link:hover {
+  opacity: 0.8;
+}
+
+.logo-link:active {
+  opacity: 0.6;
 }
 
 .logo-img {
@@ -209,6 +219,7 @@ img {
   margin: 0;
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .site__nav--item {
@@ -277,8 +288,110 @@ img {
   align-items: center;
 }
 
+.hero__content {
+  width: 608px;
+  margin-right: 32px;
+  margin-left: auto;
 
+}
 
+.hero__content--heading {
+  margin: 0 0 29px 0;
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 70px;
+  line-height: 64px;
+  color: #333333;
+}
+
+.hero-span {
+  display: block;
+  color: #78C0DE;
+}
+
+.hero-text {
+  width: 495px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  color: #949494;
+  margin: 0 0 38px 0;
+}
+
+.hero-link {
+  text-decoration: none;
+  padding: 15px 48px;
+  color: #fff;
+  background: #333333;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  vertical-align: baseline;
+  margin-bottom: 290px;
+}
+
+.hero-link:hover {
+  background-color: #FFBD54;
+  color: #333333;
+}
+
+.hero-link:active {
+  opacity: 0.6;
+}
+
+.hero {
+  padding-top: 145px;
+  background-image: url("../img/animals.png"), url("../img/parrot.png");
+  background-repeat: no-repeat, no-repeat;
+  background-size: auto 834px, auto 430px;
+  background-position: left -230px top -100px, right -110px top 400px;
+}
+
+.blockquote-box {
+  max-width: 1134px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.blockquote-text {
+  max-width: 700px;
+  text-align: center;
+}
+
+.quotation {
+  display: block;
+}
+
+.quotation-left {
+  margin-bottom: auto;
+}
+
+.quotation-right {
+  margin-top: auto;
+}
+
+.line {
+  width: 140px;
+  color: #dbdbdb;
+}
+
+.blockquote-heading {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  color: #333333;
+  text-align: center;
+}
+
+.block-box {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-bottom: 190px;
+}
+
+.
 
 
 
