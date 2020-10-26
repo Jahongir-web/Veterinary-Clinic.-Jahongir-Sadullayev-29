@@ -1,16 +1,16 @@
 @font-face {
   font-family: "Futura PT";
-  src: url("FuturaPT-Medium.woff2") format("woff2"),
-  url("FuturaPT-Medium.woff") format("woff");
+  src: url("../fonts/FuturaPT-Medium.woff2") format("woff2"),
+  url("../fonts/FuturaPT-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Futura PT Book";
-  src: url("FuturaPT-Book.woff2") format("woff2"),
-  url("FuturaPT-Book.woff") format("woff");
+  font-family: "Futura PT";
+  src: url("../fonts/FuturaPT-Book.woff2") format("woff2"),
+  url("../fonts/FuturaPT-Book.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -18,8 +18,8 @@
 
 @font-face {
   font-family: "Futura PT";
-  src: url("FuturaPT-Bold.woff2") format("woff2"),
-  url("FuturaPT-Bold.woff") format("woff");
+  src: url("../fonts/FuturaPT-Bold.woff2") format("woff2"),
+  url("../fonts/FuturaPT-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -195,7 +195,6 @@ img {
 
 .logo-link {
   display: block;
-  vertical-align: baseline;
   position: absolute;
   top: -20px;
   transition: 0.36s ease;
@@ -705,6 +704,8 @@ img {
   margin: 14px 0;
 
 }
+
+.box-servicess{position: relative;padding-right: 40px;}
 
 
 
