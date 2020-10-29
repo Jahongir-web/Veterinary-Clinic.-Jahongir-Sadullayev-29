@@ -47,9 +47,6 @@ body {
   background-color: #e5e5e5;
   color: #949494;
   background-image: url("../img/bg.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
 }
 
 img {
@@ -81,6 +78,7 @@ img {
   padding: 11px 0 9px 0;
   align-items: center;
   flex-wrap: wrap;
+  background-color: #e5e5e5;
 }
 
 .address-clinic {
@@ -289,7 +287,7 @@ img {
 
 .hero__content {
   width: 608px;
-  margin-right: 32px;
+  margin-right: 45px;
   margin-left: auto;
 
 }
@@ -310,7 +308,7 @@ img {
 }
 
 .hero-text {
-  width: 495px;
+  max-width: 495px;
   font-weight: normal;
   font-size: 16px;
   line-height: 21px;
@@ -343,8 +341,8 @@ img {
   padding-top: 145px;
   background-image: url("../img/animals.png"), url("../img/parrot.png");
   background-repeat: no-repeat, no-repeat;
-  background-size: auto 834px, auto 430px;
-  background-position: left -230px top -100px, right -110px top 400px;
+  background-size: auto 800px, auto 400px;
+  background-position: calc(50% - 465px) -93px, calc(50% + 620px) 380px;
 }
 
 .blockquote-box {
@@ -553,6 +551,17 @@ img {
   border: 0;
   border-radius: 3px;
   margin: 278px 21px 73px 0;
+  outline: 0;
+
+}
+
+.input-group:focus {
+  box-shadow: 0 0 0 2px black;
+}
+
+.input-group:not(:placeholder-shown):invalid {
+  color: red;
+  box-shadow: 0 0 0 2px red;
 }
 
 .subscription__form {
@@ -705,7 +714,10 @@ img {
 
 }
 
-.box-servicess{position: relative;padding-right: 40px;}
+.box-servicess {
+  position: relative;padding-right: 40px;
+}
+
 
 
 
@@ -737,4 +749,11 @@ only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
 
+  body {
+    background-image: url("../img/bg@2x.png");
+  }
+
+  .address-clinic::before {
+    background-image: url("../img/uycha@2x.png");
+  }
 }
